@@ -85,14 +85,15 @@ section.topo-site{
 }
 
 section.topo-site .flex{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 90px;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-
-.topo-site .txt-topo .img-perfil {
-    max-width: 600px;
+.topo-site .txt-topo {
+    max-width: 65%;
 }
 
 .topo-site .txt-topo h1{
@@ -105,6 +106,16 @@ section.topo-site .flex{
     color: #fff;
     font-size: 28px;
     margin: 40px 0;
+}
+
+.topo-site .img-perfil {
+    max-width: 50%;
+}
+
+.topo-site .img-perfil img {
+    width: 100%;
+    height: 400px;
+    display: block;
 }
 
 .button-wrapper {
@@ -368,26 +379,38 @@ section.sobre {
 
 section.sobre .flex{
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .sobre .txt-sobre{
     color: #fff;
+    max-width: 60%;
 }
 
 .sobre .txt-sobre h2 {
     font-size: 36px;
-    line-height: 5px;
+    line-height: 10px;
     margin-bottom: 30px;
 }
 
 .sobre .txt-sobre h2 span {
     color: #FFC700;
-    display: block;
+    display: flex;
 }
 
 .sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
+}
+
+.sobre .img-sobre {
+    max-width: 35%;
+}
+
+.sobre .img-sobre img {
+    width: 100%;
+    display: block;
 }
